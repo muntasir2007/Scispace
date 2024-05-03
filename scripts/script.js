@@ -5,7 +5,8 @@ const navBar = document.getElementById('navBar');
 
 //making the toggle button for navbar
 toggleButton.addEventListener('click', function() {
-	navBar.classList.toggle('hidden'); 
+	navBar.classList.toggle('hidden');
+  navBar.classList.toggle('active'); 
 	toggleButton.classList.toggle('toggleUp');
 });
 

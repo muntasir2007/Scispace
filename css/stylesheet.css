@@ -1,6 +1,7 @@
 *{
 	margin: 0;
 	padding: 0;
+  font-family: 'Poppins', sans-serif;
 }
 div.scrollmenu {
   background-color: #333;
@@ -65,8 +66,14 @@ div.scrollmenu a:hover {
 	background-color: #444;
 }
 
-.hidden{
-	display: none;
+#navBar.hidden{
+	position: sticky;
+  transition: all 0.3s ease;
+}
+
+#navBar.active{
+  position: relative;
+  transition: all 0.3s ease;
 }
 
 .mySlides {
@@ -74,9 +81,8 @@ div.scrollmenu a:hover {
 }
 
 .mySlides img{
-	margin-top: 58px;
-	margin-left: 10%;
-	margin-right: 10%;
+  width: 100%;
+  height: 70vh;
 }
 
 .slideshowcontainer{
@@ -84,8 +90,12 @@ div.scrollmenu a:hover {
 }
 
 .didUNoContainer{
-	padding: 100px;
+	padding: 120px;
 	background-color: #DDDDDD;	
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .toggleUp i {
@@ -93,14 +103,15 @@ div.scrollmenu a:hover {
 }
 
 .about{
-	padding: 100px;
+	padding: 120px;
 	background-color: #777;
 	height: 400px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .resources{
 	display: inline-block;
-	float: left;
 }
 
 .h3resources{
@@ -124,5 +135,4 @@ div.scrollmenu a:hover {
 .contactUs{
 	padding-right: 100px;
 	display: inline-block;
-	float: right;
 }
