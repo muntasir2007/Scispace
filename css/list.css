@@ -123,3 +123,9 @@ h1 {
 .movie-item p {
     margin: 0;
 }
+
+.description {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

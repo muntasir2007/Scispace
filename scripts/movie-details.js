@@ -22,8 +22,11 @@ document.addEventListener('DOMContentLoaded', function() {
                     ${selectedMovie.genre}
                 </div>
             </div>
+            <p><strong>Status:</strong> ${selectedMovie.status}</p>
             <p><strong>Director:</strong> ${selectedMovie.director}</p>
-            <p><strong>Number of Episodes:</strong> ${selectedMovie.EpisodeNumber.join(', ')}</p>
+            <p><strong>Number of Episodes:</strong> ${selectedMovie.episodeNumber.join(', ')}</p>
+            <p><strong>Parts:</strong> ${selectedMovie.parts.join(', ')}</p>
+
             <p><strong>Description:</strong> ${selectedMovie.description}</p>
         `;
     } else {

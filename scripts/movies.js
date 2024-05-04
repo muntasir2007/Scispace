@@ -8,7 +8,8 @@ function generateMovieItem(movie) {
         <div class="movie-details">
             <h2>${movie.title}</h2>
             <p><strong>Genre:</strong> ${movie.genre}</p>
-            <p><strong>Description:</strong> ${movie.description}</p>
+            <strong>Description:</strong>
+            <p id="description"> ${movie.description}</p>
             <a href="./movie-details.html?title=${encodeURIComponent(movie.title)}" class="view-details-link">View Details</a>
         </div>
     </div>
@@ -32,3 +33,16 @@ function renderMovieList() {
 
 // Render the movie list when the page loads
 document.addEventListener('DOMContentLoaded', renderMovieList);
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    var maxLength = 150; // Maximum number of characters
+    var descriptionElement = document.getElementById("description");
+    var descriptionText = descriptionElement.textContent;
+
+    // Truncate the text if it exceeds the maximum length
+    if (descriptionText.length > maxLength) {
+        var truncatedText = descriptionText.substring(0, maxLength) + "...";
+        descriptionElement.textContent = truncatedText;
+    }
+});
