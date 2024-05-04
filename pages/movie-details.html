@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quiz</title>
+	<link rel="stylesheet" type="text/css" href="../../css/movidetails.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap">
+	<!-- Adding Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="scrollmenu" id="navBar" style="position: static;">
+		<div class="scrollmenucontent">
+  			<a href="../index.html">Home</a>
+  			<a href="./quiz.html">Quiz</a>
+  			<a href="./list.html">List</a>
+  			<a href="#contact">Random</a>
+  			<a href="../index.html">About</a>
+ 			<form action="/search" method="get" class="searchbar">
+  				<input type="text" name="search" placeholder="Search...">
+  				<button type="submit" id="searchicon"><i class="fas fa-search"></i></button>
+			</form>
+ 		</div>
+	</div>
+
+    <body>
+        <div class="container">
+            <div class="image-details" id="movieDetails">
+                    <!-- Movie details will be dynamically generated here -->
+            </div>
+            <footer>
+                <a href="./list.html" class="back-button">Back to Movie List</a>
+            </footer>
+        </div>
+    
+        <script src="../scripts/movie-details.js" type="module"></script>
+    </body>
+</body>
+</html>

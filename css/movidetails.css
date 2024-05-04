@@ -1,0 +1,127 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+	box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+div.scrollmenu {
+    background-color: #333;
+    overflow: auto;
+    white-space: nowrap;
+    padding: 5px;
+    width: 100%;
+    position: fixed;
+    z-index: 9998;
+  }
+  
+  div.scrollmenucontent {
+      float:right;
+  }
+  
+  div.scrollmenu a {
+    display: inline-block;
+    color: white;
+    text-align: right;
+    padding: 14px;
+    text-decoration: none;
+  }
+  
+  div.scrollmenu a:hover {
+    background-color: #777;
+  }
+  /* Style the search box inside the navigation bar */
+  .scrollmenu input[type=text] {
+    padding: 6px 10px;
+    border: none;
+    margin-top: 8px;
+    margin-left: 20px;
+    font-size: 17px;
+  }
+  #searchicon {
+    margin-top: 8px;
+    margin-right: 16px;
+    display: inline-block;
+    width: 35px; /* Set the width of the icon */
+    height: 35px; /* Set the height of the icon */
+    color: #333; /* Set the color of the icon */
+    cursor: pointer; /* Change cursor to pointer on hover for better UX */
+  }
+  
+  .searchbar{
+      display: inline-block;
+  }
+  
+  #togglenav{
+    position: fixed;
+    top: 0;
+    right: 50%;
+    z-index: 9999;
+    width: 7%;
+    border: none;
+    background-color:  #666666;
+    border-radius: 0px 0px 15px 15px;
+    cursor: pointer;
+  }
+  
+  #togglenav:hover{
+      background-color: #444;
+  }
+  
+  #navBar.hidden{
+      position: sticky;
+    transition: all 0.3s ease;
+  }
+  
+  #navBar.active{
+    position: relative;
+    transition: all 0.3s ease;
+  }
+
+  .container {
+    max-width: 70vw;
+    margin: 0 auto;
+}
+
+.image-section {
+    position: relative;
+    width: 100%;
+}
+
+.image-section img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.back-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+}
+
+.back-button:hover {
+    background-color: #555;
+}
+
+.trailer-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.trailer-button:hover {
+    background-color: #0056b3;
+}
