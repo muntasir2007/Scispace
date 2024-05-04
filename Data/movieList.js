@@ -145,7 +145,7 @@ const moviesList = [
   },
   {
     title: "Steins;Gate",
-    image: "/images/steins;gate.webp",
+    image: "../images/steins;gate.webp",
     releaseYear: 2011,
     genre: "Sci-fi, Dram, Suspense",
     director: "Tatsuya Matsubara",
@@ -350,7 +350,7 @@ const moviesList = [
   },
   {
     title: "Children Of Men (Film)",
-    image: "../images/childrenofmen.webp",
+    image: "../images/Childrenofmen.webp",
     releaseYear: 2007,
     genre: "Sci-fi,Drama,Action",
     director: "Alfonso Cuarón",
