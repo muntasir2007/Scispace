@@ -85,56 +85,19 @@ div.scrollmenu {
   }
 
   .container {
-    max-width: 80vw;
+    max-width: 70vw;
     margin: 0 auto;
 }
 
 .image-section {
     position: relative;
-    margin-bottom: 20px;
+    width: 100%;
+}
+
+.image-section img {
+    width: 100%;
     height: 400px;
-}
-
-.image-section::before {
-    content: '';
-    position: absolute;
-    width: 80vw;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat; /* Replace with actual movie image */
-    z-index: -1;
-    opacity: 0.8; /* Adjust opacity as needed */
-}
-
-.image-details {
-    position: relative;
-    height: 100%;
-    width: fit-content;
-    padding: 20px;
-    background-color: rgba(126, 126, 126, 0.27); /* Semi-transparent white background */
-    border-radius: 10px;
-    text-align: start;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    z-index: 1; /* Ensure text appears above image */
-    color: #fff;
-}
-
-.image-details h2 {
-    margin-top: 0;
-}
-
-.movie-details {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-}
-
-.movie-details > div {
-    flex: 1;
-    padding: 0 10px;
+    object-fit: cover;
 }
 
 .back-button {

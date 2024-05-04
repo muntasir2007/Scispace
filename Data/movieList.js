@@ -5,7 +5,7 @@ const moviesList = [
         releaseYear: 2022,
         genre: "Action, Adventure",
         director: "John Doe",
-        starring: ["Jane Doe", "Michael Smith"],
+        EpisodeNumber: ["01"],
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     },
     {
@@ -14,7 +14,7 @@ const moviesList = [
         releaseYear: 2023,
         genre: "Comedy, Drama",
         director: "Alice Johnson",
-        starring: ["Emily Brown", "David Lee"],
+        EpisodeNumber: ["10 (Season 1)", "10 (Season 2)"],
         description: "Sed et dolor at risus elementum vestibulum."
     },
     // Add more movie objects as needed

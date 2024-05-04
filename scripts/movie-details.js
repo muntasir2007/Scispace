@@ -14,12 +14,16 @@ document.addEventListener('DOMContentLoaded', function() {
     // If selected movie found, generate movie details
     if (selectedMovie) {
         movieDetailsContainer.innerHTML = `
-            <h2>${selectedMovie.title}</h2>
-            <img src="${selectedMovie.image}" alt="${selectedMovie.title}">
-            <p><strong>Release Year:</strong> ${selectedMovie.releaseYear}</p>
-            <p><strong>Genre:</strong> ${selectedMovie.genre}</p>
+            <div class="image-section">
+                <img src="${selectedMovie.image}" alt="${selectedMovie.title}">
+                <div class="image-overlay">
+                    <h2>${selectedMovie.title}</h2>
+                    ${selectedMovie.releaseYear}
+                    ${selectedMovie.genre}
+                </div>
+            </div>
             <p><strong>Director:</strong> ${selectedMovie.director}</p>
-            <p><strong>Starring:</strong> ${selectedMovie.starring.join(', ')}</p>
+            <p><strong>Number of Episodes:</strong> ${selectedMovie.EpisodeNumber.join(', ')}</p>
             <p><strong>Description:</strong> ${selectedMovie.description}</p>
         `;
     } else {

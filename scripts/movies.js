@@ -9,7 +9,7 @@ function generateMovieItem(movie) {
             <h2>${movie.title}</h2>
             <p><strong>Genre:</strong> ${movie.genre}</p>
             <p><strong>Description:</strong> ${movie.description}</p>
-            <a href="./Details/movie-details.html?title=${encodeURIComponent(movie.title)}" class="view-details-link">View Details</a>
+            <a href="./movie-details.html?title=${encodeURIComponent(movie.title)}" class="view-details-link">View Details</a>
         </div>
     </div>
     `;
